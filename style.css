@@ -1,4 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap');
+}
+
 .html {
-    padding-left: 5vh;
-    padding-right: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+h1 {
+  font-family: 'Alegreya Sans', sans-serif !important;
+  font-size: 10vh;
+  background: -webkit-linear-gradient(#667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 5vh;
+}
+
+p {
+  font-family: 'Roboto Flex', sans-serif !important;
 }
