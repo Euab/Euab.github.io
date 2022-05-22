@@ -6,6 +6,11 @@
   src: url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap');
 }
 
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+}
+
 .html {
   padding-left: 5vh;
   padding-right: 5vh;
@@ -13,16 +18,28 @@
 
 h1 {
   font-family: 'Alegreya Sans', sans-serif !important;
-  font-size: 8vw;
+  font-size: 6vw;
   background: -webkit-linear-gradient(#667eea, #764ba2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 h2 {
+  font-family: 'Roboto Flex', sans-serif !important;
   font-size: 5vh;
 }
 
-p {
+h3, p {
   font-family: 'Roboto Flex', sans-serif !important;
+}
+
+.sign {
+  width: 30vh;
+  height: 30vh;
+}
+
+.vertical-align {
+  top: 50%;
+  -ms-transform: translateY(25%);
+  transform: translateY(25%);
 }
