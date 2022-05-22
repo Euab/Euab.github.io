@@ -14,7 +14,33 @@
     <hr>
     <h1>Under construction</h1>
     <p>This website is currently being developed...</p>
+    <br>
+    <div>
+      <h2 id="timer"></h2>
+    </div>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script>
+  // Timer until website will be deployed.
+  var countDownDate = new Date("July 28, 2022 17:00:00").getTime();
+
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+    if (distance < 0) {
+      // It's almost definite that we are going to reach this bit of code before the website deploys.
+      clearInterval(x);
+      document.getElementById("timer").innerHTML = "Website should be up the developer is lazy.";
+    }
+  }, 1000);
+</script>
 </html>
